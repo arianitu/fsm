@@ -78,7 +78,7 @@ func (f *FSM) Start(startState string) error {
 	return nil
 }
 
-// Transition transitions from the current FSM state to currentState. If the transition is not
+// Transition transitions from the current FSM state to nextState. If the transition is not
 // a valid transition, error will be non nil. The onExit func of the current state is called
 // and the onEnter func of the next state is called
 func (f *FSM) Transition(nextState string) error {
